@@ -1,0 +1,22 @@
+{% extends 'ShopApp/blockes.html' %} 
+
+{% block title %} 
+    WebRare 
+{% endblock %} 
+
+
+{%block body %}
+
+    <div>
+        <ul>
+            {% for name, price in products %}
+                <li> {{name}} for ${{price}}</li>
+
+                No product here
+            {% endfor %}
+        </ul>
+    <div>
+
+    <div class="timer">time run: {{ time_run }}</div>
+    <div class="lorem_result">{% lorem 3 p random%}</div>
+{% endblock %}
